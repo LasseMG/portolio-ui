@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: portfolio-ui
+  namespace: default
+  labels:
+    app: portfolio-ui
+spec:
+  type: ClusterIP
+  selector:
+    app: portfolio-ui
+  ports:
+  - port: 80
+    targetPort: 80
+    protocol: TCP
+    name: http
