@@ -7,6 +7,7 @@ export interface Project {
   id: string
   title: string
   description: string
+  type?: 'external' | 'internal'
   detailedDescription?: string
   url?: string
   githubUrl?: string
